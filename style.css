@@ -1,0 +1,420 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+    background-color: white;
+    color: black;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 5px 0 gray;
+}
+
+.logo {
+    padding-left: 30px;
+    width: 150px;
+    height: auto; 
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    height: 10px;
+    width: auto;
+    text-transform: uppercase;
+    margin-left: 10px;
+    padding: 10px 30px;
+    background-color: white;
+    color: black;
+    border-bottom: 2px;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 80px;
+}
+/* home section */
+.home {
+
+    padding: 50px 10px;
+    display: flex;
+}
+
+.flex-home {
+    flex: 1;
+    padding: 0 40px;
+    align-items: stretch;
+}
+h2{
+    font-size: 60px;
+    padding-top: 0%;
+}
+.location{
+    font-weight: 10px;
+    font-size: 28px;
+}
+.calls{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    
+}
+.call{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+}
+.call:hover{
+    text-decoration: overline;
+}
+p{
+    font-size: 24px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+h1, h2, p {
+    color: black;
+}
+
+video {
+    width: 80%;
+    height: auto;
+}
+ /* Do section */
+.do {
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+  .left-section {
+    flex: 0 0 400px; 
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  .right-section {
+    flex: 1;
+    overflow-y: auto;
+    height: 500px;
+
+  }
+  .do-cl {
+    flex: 1; 
+    padding: 20px;
+    display: flex;
+  }
+  .do-cl img {
+    padding-right: 3%;
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
+  }
+  .do-cl h3 {
+    margin-top: 0;
+    font-size: 30px;
+  }
+/*products*/
+.p-head{
+    margin: 10%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+ .center{
+    text-align: center;
+ } 
+.p-products{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    padding-left: 15%;
+}
+.product{
+    
+    margin: 10px;
+}
+.product p{
+    font-size: medium;
+}
+.product img{
+    width: auto;
+    height: 200px;
+}
+
+/*scrolling text*/
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.scrl {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid black;
+}
+.scrl-slide h1{
+  font-size: 20px;
+  width: bold;
+  padding: 0 5px;
+}
+.scrl-slide p{
+  font-size: 20px;
+}
+.scrl-slide img{
+  height: 20px;
+  width: auto;
+}
+.scrl-slide a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.scrl-slide .item{
+  padding: 0 5px;
+}
+.scrl-slide .item:first-child{
+  padding: 0 15px;
+}
+
+.scrl-slide {
+  align-items: center;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  animation: 35s slide infinite linear;
+}
+/*-----------footer-------------*/
+footer{
+    background-color: black;
+    margin: 10%;
+    margin-bottom: 0;
+    margin-top: 0px;
+}
+  /*slider*/
+  .three-column-section {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .column h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 120px;
+    padding-bottom: 0%;
+    margin-bottom: 0;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .column:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .column:nth-child(2) {
+    overflow: hidden;
+  }
+  
+  .column:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider-container {
+    width: auto;
+    height: 300px;
+    overflow: hidden;
+
+  }
+  
+  .slider {
+    display: flex;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .slide {
+    font-size: 24px;
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .slide-info {
+    padding-top: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  
+  
+  .name {
+    font-size: 26px;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .controls {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  button{
+    background-color: black;
+  }
+  
+  .prev,
+  .next {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dots {
+    display: flex;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #464545;
+    margin: 0 5px;
+  }
+  
+  .dot.active {
+    background-color: #ffffff;
+  }
+/*-------------logo-------------------------------*/
+footer .logo{
+    margin: 2%;
+    padding-top: 10%;
+}
+.contract{
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.contract a{
+    text-decoration: none;
+    color: white;
+}
+.contract h3{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.contracts{
+    padding-left: 5%;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.ab-us{
+    color: #f0f0f0;
+    padding-left: 3%;
+}
+.ab-us h3{
+    color: #f0f0f0;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.ab-us p{
+    color: white;
+}
+.ft-top {
+    
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ft-top p {
+    padding-left: 30px;
+    height: auto; 
+    color: white;
+}
+.f-bottom ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.f-bottom li {
+    margin-left: 10px;
+}
+
+.f-bottom a {
+    text-decoration: none;
+    font-weight: bold;
+    height: 10px;
+    width: auto;
+    text-transform: uppercase;
+    margin-left: 10px;
+    padding: 10px 30px;
+    color: rgb(243, 231, 231);
+    border-bottom: 2px;
+    cursor: pointer;
+}
+
+
+
+.tqw{
+    font-family: Tahoma;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-size-adjust: 100%;
+    width: bold;
+    font-size: 95px;
+    margin: 0;
+    padding: 0;
+}
+
